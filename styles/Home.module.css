@@ -45,6 +45,19 @@
   font-size: 4rem;
 }
 
+.image {
+  height: 4rem;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+}
+
 .title,
 .description {
   text-align: center;

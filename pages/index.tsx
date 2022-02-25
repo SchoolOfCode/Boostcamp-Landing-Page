@@ -12,8 +12,13 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        {/* <img src="../icon.png" alt="icon" /> */}
-        <h1 className={styles.title}>BOOSTCAMP</h1>
+        <div className={styles.logoContainer}>
+          <img
+            src="https://classic-assets.eascdn.net/~assets/2a8eafca97f5e02149e1f4b805120a5e"
+            className={styles.image}
+          />
+          <h1 className={styles.title}>BOOSTCAMP</h1>
+        </div>
 
         <p className={styles.description}>By Team Caarve</p>
 
