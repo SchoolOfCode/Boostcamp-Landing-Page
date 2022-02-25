@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             href="https://expo.dev/@teamcaarve/Boostcamp?serviceType=classic&distribution=expo-go"
             className={styles.card}
           >
-            <h2>Try Now &rarr;</h2>
+            <h2>Try Now on Expo &rarr;</h2>
           </a>
         </div>
       </main>
