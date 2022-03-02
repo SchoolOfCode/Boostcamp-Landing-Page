@@ -1,40 +1,59 @@
 .content {
-   scroll-snap-type: y mandatory;
-   scroll-behavior: auto;
-   height: 100vh;
-   width: 100vw;
-   overflow: auto;
-   -ms-overflow-style: none;
-   scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: auto;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .content::-webkit-scrollbar {
-   display: none;
+  display: none;
 }
 
 .content > div {
-   height: 100%;
-   width: 100%;
-   scroll-snap-align: center;
+  height: 100%;
+  width: 100%;
+  scroll-snap-align: center;
 }
 
 .landing_container {
-   background-color: red;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.multicolour_background {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  align-self: flex-start;
+  background: linear-gradient(
+    270deg,
+    rgba(236, 162, 175, 0.5) 0%,
+    rgba(250, 180, 133, 0.5) 23.32%,
+    rgba(214, 246, 222, 0.5) 76.2%,
+    rgba(199, 217, 231, 0.5) 100%
+  );
 }
 
 .phone_container {
-   background-color: yellow;
-   transform: scale(0.5);
+  position: absolute;
+  height: 80%;
+  width: auto;
+  margin-right: 15%;
 }
 
 .teampage_container {
-   background-color: green;
+  background-color: green;
 }
 
 .mission_container {
-   background-color: blue;
+  background-color: blue;
 }
 
 .instructions_container {
-   background-color: pink;
+  background-color: pink;
 }
