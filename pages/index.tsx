@@ -2,6 +2,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Phone from "../components/Phone/Phone.js";
 
 const Home: NextPage = () => {
    return (
@@ -12,7 +13,11 @@ const Home: NextPage = () => {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <div className={styles.content}>
-            <div className={styles.landing_container}>1</div>
+            <div className={styles.landing_container}>
+               <div className={styles.phone_container}>
+               <Phone phoneDisplay={false}></Phone>
+               </div>
+            </div>
             <div className={styles.teampage_container}>2</div>
             <div className={styles.mission_container}>3</div>
             <div className={styles.instructions_container}>4</div>

@@ -1,0 +1,18 @@
+.container {
+display: flex;
+position: relative;
+align-items: center;
+height: 100%;
+width: auto;
+justify-content: center;
+}
+
+.phoneOuter {
+position: absolute;
+z-index: 1;
+}
+
+.phoneInner {
+position: absolute;
+z-index: 0;
+}

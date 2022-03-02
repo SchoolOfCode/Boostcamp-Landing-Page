@@ -22,6 +22,11 @@
    background-color: red;
 }
 
+.phone_container {
+   background-color: yellow;
+   transform: scale(0.5);
+}
+
 .teampage_container {
    background-color: green;
 }
