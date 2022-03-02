@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Phone from "../components/Phone/Phone.js";
+import QRCode from "../components/QRCode/QRCode.js";
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +15,13 @@ const Home: NextPage = () => {
       </Head>
       <div className={styles.content}>
         <div className={styles.landing_container}>
-          <div className={styles.multicolour_background}></div>
-          <div className={styles.phone_container}>
-            <Phone phoneDisplay={false}></Phone>
+          <div className={styles.multicolour_background}>
+            <div className={styles.page_heading}>
+              <QRCode />
+            </div>
+            <div className={styles.phone_container}>
+              <Phone phoneDisplay={false}></Phone>
+            </div>
           </div>
         </div>
         <div className={styles.teampage_container}>2</div>
