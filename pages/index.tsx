@@ -4,6 +4,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Phone from "../components/Phone/Phone.js";
 import QRCode from "../components/QRCode/QRCode.js";
+import InfoCard from "../components/InfoCard/InfoCard.js";
 
 const Home: NextPage = () => {
   return (
@@ -24,8 +25,22 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className={styles.teampage_container}>2</div>
-        <div className={styles.mission_container}>3</div>
+        <div className={styles.teampage_container}>
+          <InfoCard
+            isYoga={false}
+            heading={"heading"}
+            subHeading={"subheading"}
+            paragraph={"paragraph"}
+          ></InfoCard>
+        </div>
+        <div className={styles.mission_container}>
+          <InfoCard
+            isYoga={true}
+            heading={"heading"}
+            subHeading={"subheading"}
+            paragraph={"paragraph"}
+          ></InfoCard>
+        </div>
         <div className={styles.instructions_container}>4</div>
       </div>
     </div>

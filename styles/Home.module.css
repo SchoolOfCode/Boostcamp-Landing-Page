@@ -61,11 +61,15 @@
 }
 
 .teampage_container {
-  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mission_container {
-  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .instructions_container {
