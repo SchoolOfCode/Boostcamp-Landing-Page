@@ -28,20 +28,20 @@ const Home: NextPage = () => {
         <div className={styles.teampage_container}>
           <InfoCard
             isYoga={false}
-            heading={"heading"}
-            subHeading={"subheading"}
-            paragraph={"paragraph"}
+            heading={`As six School of Code bootcampers, `}
+            subHeading={`we came together to complete a final project.`}
+            paragraph={`With six unique backgrounds and perspectives, we set out to build an application that would benefit future bootcampers (or anyone else in need of a boost!)`}
           ></InfoCard>
         </div>
         <div className={styles.mission_container}>
           <InfoCard
             isYoga={true}
-            heading={"heading"}
-            subHeading={"subheading"}
-            paragraph={"paragraph"}
+            heading={`Complete random tasks`}
+            subHeading={`that are different every day.`}
+            paragraph={`Sometimes people get caught up in the intensity of modern life. We aim to harness the power of randomness to brighten people’s day. `}
           ></InfoCard>
         </div>
-        <div className={styles.instructions_container}>4</div>
+        {/* <div className={styles.instructions_container}>4</div> */}
       </div>
     </div>
   );
