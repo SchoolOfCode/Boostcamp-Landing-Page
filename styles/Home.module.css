@@ -73,5 +73,54 @@
 }
 
 .instructions_container {
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.instructions_content {
+  display: flex;
+  height: 92%;
+  width: 100%;
+}
+
+.gif_container {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  border: 1px solid orange;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  border: 1px solid orange;
+}
+
+.instructions_star {
+  height: 7rem;
+  width: 7rem;
+}
+
+.instructions_subheading {
+  color: #6d6d6d;
+}
+
+.multicolour_footer {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  justify-content: flex-end;
+  background: linear-gradient(
+    270deg,
+    rgba(236, 162, 175, 0.5) 0%,
+    rgba(250, 180, 133, 0.5) 23.32%,
+    rgba(214, 246, 222, 0.5) 76.2%,
+    rgba(199, 217, 231, 0.5) 100%
+  );
 }

@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Phone from "../components/Phone/Phone.js";
 import QRCode from "../components/QRCode/QRCode.js";
 import InfoCard from "../components/InfoCard/InfoCard.js";
+import BoostcampStar from "../pages/images/logo.svg";
 
 const Home: NextPage = () => {
   return (
@@ -41,7 +42,23 @@ const Home: NextPage = () => {
             paragraph={`Sometimes people get caught up in the intensity of modern life. We aim to harness the power of randomness to brighten people’s day. `}
           ></InfoCard>
         </div>
-        {/* <div className={styles.instructions_container}>4</div> */}
+        <div className={styles.instructions_container}>
+          <div className={styles.instructions_content}>
+            <div className={styles.gif_container}>{/* phone gif here */}</div>
+            <div className={styles.instructions}>
+              <img
+                className={styles.instructions_star}
+                src={BoostcampStar.src}
+                alt="boostcamp star"
+              />
+              <h1 className={styles.instructions_heading}>BOOST your mood!</h1>
+              <h2 className={styles.instructions_subheading}>
+                How to unlock the power of BoostCamp
+              </h2>
+            </div>
+          </div>
+          <div className={styles.multicolour_footer}></div>
+        </div>
       </div>
     </div>
   );
