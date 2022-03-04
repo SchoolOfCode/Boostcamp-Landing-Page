@@ -22,3 +22,14 @@
   font-size: 1.3rem;
   font-weight: 700;
 }
+
+@media (max-width: 800px) {
+  .tagline,
+  .qr_sticker {
+    display: none;
+  }
+
+  .heading {
+    flex-direction: column;
+  }
+}

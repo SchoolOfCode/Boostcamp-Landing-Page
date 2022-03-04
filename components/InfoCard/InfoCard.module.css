@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .yogaCard {
   background: #ffffff;
   box-shadow: 17px 17px 48px rgba(0, 0, 0, 0.12);
@@ -9,7 +15,6 @@
   flex-direction: row-reverse;
   font-family: "Raleway", sans-serif;
   font-size: 2.1rem;
-  padding: 10%;
   padding: 10% 3% 10% 7%;
 }
 
@@ -18,7 +23,7 @@
   box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.12);
   border-radius: 30px;
   width: 90%;
-  height: 70%;
+  height: 100%;
   display: flex;
   align-items: center;
   font-family: "Raleway", sans-serif;
@@ -28,6 +33,10 @@
 
 .svgImage {
   width: 45%;
+}
+
+.svgImagePhone {
+  display: none;
 }
 
 .textContainer {
@@ -50,4 +59,37 @@
 .textParagraph {
   color: black;
   font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .yogaCard {
+    font-size: 5vw;
+    height: auto;
+    padding: 0;
+  }
+
+  .basketballCard {
+    font-size: 5vw;
+    height: auto;
+    padding: 0;
+  }
+
+  .svgImage {
+    display: none;
+  }
+
+  .svgImagePhone {
+    display: unset;
+    height: auto;
+  }
+
+  .svgImagePhone > * {
+    width: 100%;
+    padding: 3rem;
+  }
 }
