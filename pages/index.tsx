@@ -48,15 +48,23 @@ const Home: NextPage = () => {
         <div className={styles.instructions_container}>
           <div className={styles.instructions_content}>
             <div className={styles.gif_container}>
-              <img src={InstructionsImage.src} alt="image of app in use" />
+              <img
+                className={styles.phone}
+                src={InstructionsImage.src}
+                alt="image of app in use"
+              />
             </div>
             <div className={styles.instructions}>
-              <img
-                className={styles.instructions_star}
-                src={BoostcampStar.src}
-                alt="boostcamp star"
-              />
-              <h1 className={styles.instructions_heading}>BOOST your mood!</h1>
+              <div className={styles.title_container}>
+                <img
+                  className={styles.instructions_star}
+                  src={BoostcampStar.src}
+                  alt="boostcamp star"
+                />
+                <h1 className={styles.instructions_heading}>
+                  BOOST your mood!
+                </h1>
+              </div>
               <h2 className={styles.instructions_subheading}>
                 How to unlock the power of BoostCamp
               </h2>
@@ -67,6 +75,15 @@ const Home: NextPage = () => {
                   isActive={true}
                   text={"3. Complete your Task!"}
                 />
+              </div>
+              <div className={styles.downloadContainer}>
+                <a
+                  className={styles.downloadButton}
+                  target={"_blank"}
+                  href={`https://expo.dev/@teamcaarve/Boostcamp?serviceType=classic&distribution=expo-go`}
+                >
+                  <div>Download on Expo</div>
+                </a>
               </div>
             </div>
           </div>
