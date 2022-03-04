@@ -81,15 +81,15 @@
 
 .instructions_content {
   display: flex;
+  justify-content: center;
   height: 92%;
-  width: 100%;
+  width: 90%;
 }
 
 .gif_container {
   display: flex;
   height: 100%;
   width: 50%;
-  border: 1px solid orange;
 }
 
 .instructions {
@@ -99,7 +99,12 @@
   justify-content: center;
   height: 100%;
   width: 50%;
-  border: 1px solid orange;
+}
+
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .instructions_star {
@@ -109,6 +114,14 @@
 
 .instructions_subheading {
   color: #6d6d6d;
+}
+
+.instruction_cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
 }
 
 .multicolour_footer {

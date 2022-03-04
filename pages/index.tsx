@@ -1,11 +1,14 @@
 /* eslint-disable react/jsx-key */
 import type { NextPage } from "next";
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Phone from "../components/Phone/Phone.js";
 import QRCode from "../components/QRCode/QRCode.js";
 import InfoCard from "../components/InfoCard/InfoCard.js";
 import BoostcampStar from "../pages/images/logo.svg";
+import InstructionsImage from "../pages/images/instructions.svg";
+import InstructionCard from "../components/InstructionCard/InstructionCard.js";
 
 const Home: NextPage = () => {
   return (
@@ -44,7 +47,9 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.instructions_container}>
           <div className={styles.instructions_content}>
-            <div className={styles.gif_container}>{/* phone gif here */}</div>
+            <div className={styles.gif_container}>
+              <img src={InstructionsImage.src} alt="image of app in use" />
+            </div>
             <div className={styles.instructions}>
               <img
                 className={styles.instructions_star}
@@ -55,6 +60,14 @@ const Home: NextPage = () => {
               <h2 className={styles.instructions_subheading}>
                 How to unlock the power of BoostCamp
               </h2>
+              <div className={styles.instruction_cards}>
+                <InstructionCard isActive={true} text={"1. Choose a Type"} />
+                <InstructionCard isActive={true} text={"2. Choose a Task"} />
+                <InstructionCard
+                  isActive={true}
+                  text={"3. Complete your Task!"}
+                />
+              </div>
             </div>
           </div>
           <div className={styles.multicolour_footer}></div>
