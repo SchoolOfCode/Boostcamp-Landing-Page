@@ -31,5 +31,6 @@
 
   .heading {
     flex-direction: column;
+    height: auto;
   }
 }

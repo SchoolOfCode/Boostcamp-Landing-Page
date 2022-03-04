@@ -80,6 +80,7 @@ const Home: NextPage = () => {
                 <a
                   className={styles.downloadButton}
                   target={"_blank"}
+                  rel="noreferrer"
                   href={`https://expo.dev/@teamcaarve/Boostcamp?serviceType=classic&distribution=expo-go`}
                 >
                   <div>Download on Expo</div>
