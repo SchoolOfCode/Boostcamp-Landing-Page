@@ -7,7 +7,14 @@ export default function InfoCard({ isYoga, heading, subHeading, paragraph }) {
     <div className={css.container}>
       <div className={isYoga ? css.yogaCard : css.basketballCard}>
         <div className={css.svgImage}>
-          <img src={isYoga ? YogaSVG.src : BasketballSVG.src}></img>
+          <img
+            src={isYoga ? YogaSVG.src : BasketballSVG.src}
+            alt={
+              isYoga
+                ? "Illustration of person doing some yoga as a boostcamp activity"
+                : "Illustration of person playing some basketball as a boostcamp activity"
+            }
+          ></img>
         </div>
         <div className={css.textContainer}>
           <p className={css.textHeading}>{heading}</p>
@@ -16,7 +23,14 @@ export default function InfoCard({ isYoga, heading, subHeading, paragraph }) {
         </div>
       </div>
       <div className={css.svgImagePhone}>
-        <img src={isYoga ? YogaSVG.src : BasketballSVG.src}></img>
+        <img
+          src={isYoga ? YogaSVG.src : BasketballSVG.src}
+          alt={
+            isYoga
+              ? "Illustration of person doing some yoga as a boostcamp activity"
+              : "Illustration of person playing some basketball as a boostcamp activity"
+          }
+        ></img>
       </div>
     </div>
   );
