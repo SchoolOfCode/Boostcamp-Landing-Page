@@ -96,7 +96,9 @@ const Home: NextPage = () => {
               rel="noreferrer"
               href={`https://expo.dev/@teamcaarve/Boostcamp?serviceType=classic&distribution=expo-go`}
             >
-              <div>Download on Expo</div>
+              <div>
+                Download <br></br>on Expo
+              </div>
             </a>
           </div>
           <div className={styles.multicolour_footer}></div>
