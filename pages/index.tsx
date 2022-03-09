@@ -83,7 +83,7 @@ const Home: NextPage = () => {
                   rel="noreferrer"
                   href={`https://expo.dev/@teamcaarve/Boostcamp?serviceType=classic&distribution=expo-go`}
                 >
-                  <div>Download on Expo</div>
+                  <div className={styles.shine}>Download on Expo</div>
                 </a>
               </div>
             </div>
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
               rel="noreferrer"
               href={`https://expo.dev/@teamcaarve/Boostcamp?serviceType=classic&distribution=expo-go`}
             >
-              <div>
+              <div className={styles.shine}>
                 Download <br></br>on Expo
               </div>
             </a>

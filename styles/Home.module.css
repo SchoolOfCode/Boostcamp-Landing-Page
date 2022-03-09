@@ -103,6 +103,7 @@
     height: 100%;
     width: 70%;
     margin-left: 10rem;
+    min-width: 40rem;
   }
 
   .title_container {
@@ -147,7 +148,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 60%;
     height: 15%;
     background: linear-gradient(
       270deg,
@@ -239,12 +240,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 
   .instructions_content {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-top: -5rem;
   }
 
   .title_container {
@@ -336,7 +339,7 @@
       rgba(214, 246, 222, 0.5) 76.2%,
       rgba(199, 217, 231, 0.5) 100%
     );
-    height: 5rem;
+    height: 3rem;
     width: 100%;
   }
 
@@ -355,5 +358,22 @@
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 5rem;
+  }
+}
+
+/* Button shine effect across all sizes */
+.shine {
+  background: linear-gradient(to right, black 45%, #6d6d6d 50%, black 55%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
   }
 }

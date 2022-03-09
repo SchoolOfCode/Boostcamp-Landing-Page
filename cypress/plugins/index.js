@@ -25,10 +25,5 @@ module.exports = (on, config) => {
 
       return null;
     },
-    table(message) {
-      console.table(message);
-
-      return null;
-    },
   });
 };
