@@ -15,7 +15,7 @@
   flex-direction: row-reverse;
   font-family: "Raleway", sans-serif;
   font-size: 2.1rem;
-  padding: 10% 3% 10% 7%;
+  padding: 5rem;
 }
 
 .basketballCard {
@@ -28,7 +28,7 @@
   align-items: center;
   font-family: "Raleway", sans-serif;
   font-size: 2.1rem;
-  padding: 10% 7% 10% 3%;
+  padding: 5rem;
 }
 
 .svgImage {
@@ -68,13 +68,13 @@
   }
 
   .yogaCard {
-    font-size: 5vw;
+    font-size: 7vw;
     height: auto;
     padding: 0;
   }
 
   .basketballCard {
-    font-size: 5vw;
+    font-size: 7vw;
     height: auto;
     padding: 0;
   }
@@ -86,6 +86,7 @@
   .svgImagePhone {
     display: unset;
     height: auto;
+    z-index: -1;
   }
 
   .svgImagePhone > * {
