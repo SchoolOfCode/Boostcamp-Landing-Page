@@ -18,6 +18,13 @@
     font-weight: 700;
   }
 
+  .slogan {
+    margin-left: 1.3rem;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
   .tagline {
     font-family: "Raleway", sans-serif;
     font-size: 1.3rem;
@@ -49,5 +56,21 @@
     font-weight: 700;
     margin: 1rem;
     margin-bottom: 1.5rem;
+  }
+}
+
+.shine {
+  background: linear-gradient(to right, black 45%, #6d6d6d 50%, black 55%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
   }
 }

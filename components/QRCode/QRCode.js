@@ -12,11 +12,11 @@ export default function QRCode() {
           src={BoostcampStar.src}
           alt="app logo"
         />
-        <h1>BOOSTCAMP</h1>
+        <h1 className={styles.shine}>BOOSTCAMP</h1>
       </div>
       <div className={styles.tagline}>
-        <h2>
-          Random tasks,<br></br> any time of day
+        <h2 className={styles.slogan}>
+          Random tasks.<br></br> Any time of day.
         </h2>
       </div>
       <div className={styles.qr_sticker}>
