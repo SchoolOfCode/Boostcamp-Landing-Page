@@ -20,13 +20,12 @@ const Home: NextPage = () => {
       </Head>
       <div className={styles.content}>
         <div className={styles.landing_container}>
-          <div className={styles.multicolour_background}>
-            <div className={styles.page_heading}>
-              <QRCode />
-            </div>
-            <div className={styles.phone_container}>
-              <Phone phoneDisplay={false}></Phone>
-            </div>
+          <div className={styles.multicolour_background}></div>
+          <div className={styles.page_heading}>
+            <QRCode />
+          </div>
+          <div className={styles.phone_container}>
+            <Phone phoneDisplay={false}></Phone>
           </div>
         </div>
         <div className={styles.teampage_container}>
@@ -88,6 +87,17 @@ const Home: NextPage = () => {
                 </a>
               </div>
             </div>
+          </div>
+          <div className={styles.downloadContainerPhone}>
+            <a
+              id="downloadButton"
+              className={styles.downloadButton}
+              target={"_blank"}
+              rel="noreferrer"
+              href={`https://expo.dev/@teamcaarve/Boostcamp?serviceType=classic&distribution=expo-go`}
+            >
+              <div>Download on Expo</div>
+            </a>
           </div>
           <div className={styles.multicolour_footer}></div>
         </div>
