@@ -339,4 +339,21 @@
     height: 5rem;
     width: 100%;
   }
+
+  .gif_container {
+    height: 50%;
+    width: 90%;
+  }
+
+  .instructions {
+    height: 50%;
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .instructions_content {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 5rem;
+  }
 }
