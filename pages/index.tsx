@@ -90,7 +90,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.downloadContainerPhone}>
             <a
-              id="downloadButton"
+              id="downloadButtonPhone"
               className={styles.downloadButton}
               target={"_blank"}
               rel="noreferrer"
